@@ -23,7 +23,6 @@
 #define PATH_MAX 4096
 #define CODESIZE 1000
 
-
 #define PUSH 0x50
 #define POP 0x58
 #define NOP 0x90
